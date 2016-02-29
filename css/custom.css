@@ -1,0 +1,755 @@
+@font-face {
+  font-family: "Fontawesome";
+  src: url('../fonts/fontawesome-webfont.woff') format('woff'),
+      url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+      url('../fonts/fontawesome-webfont.svg') format('svg'),
+      url('../fonts/fontawesome-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Glyphicons";
+  src: url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+      url('../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'),
+      url('../fonts/glyphicons-halflings-regular.svg') format('svg'),
+      url('../fonts/glyphicons-halflings-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Zawgyi-One";
+  src: url('../fonts/Zawgyi-One.woff') format('woff'),
+      url('../fonts/Zawgyi-One.eot') format('embedded-opentype'),
+      url('../fonts/Zawgyi-One.svg') format('svg'),
+      url('../fonts/Zawgyi-One.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+      url('../fonts/OpenSans-Regular-webfont.eot') format('embedded-opentype'),
+      url('../fonts/OpenSans-Regular-webfont.svg') format('svg'),
+      url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+      url('../fonts/OpenSans-ExtraBold-webfont.eot') format('embedded-opentype'),
+      url('../fonts/OpenSans-ExtraBold-webfont.svg') format('svg'),
+      url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+      url('../fonts/OpenSans-Bold-webfont.eot') format('embedded-opentype'),
+      url('../fonts/OpenSans-Bold-webfont.svg') format('svg'),
+      url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype');
+}
+
+body {
+  font-family: "OpenSans","Zawgyi-One","Arial",sans-serif;
+  font-size: 13px;
+  background-color: #f9f9f8;
+}
+
+p, span, div {
+  font-family: "OpenSans","Zawgyi-One","Arial",sans-serif;
+  font-size: 12px;
+  color: #333333;
+  line-height: 20px;
+}
+
+h1 {
+  font-family: "Arial",sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ab1718;
+}
+
+h2 {
+  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  
+  font-weight: normal;
+  color: #018334;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  font-size: 20px;
+  color: #018334;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.title-bar {
+  border-bottom: 1px solid #018334;
+}
+
+h3.mm {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+h4 {
+  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  font-size: 18px;
+  color: #018334;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h4.mm {
+  font-size: 16px;
+  padding-bottom: 0.5em;
+}
+
+h5 {
+  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+h6 {
+  font-family: "Zawgyi-One","Arial",sans-serif;
+  font-size: 15px;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+#site-name a {
+  font-family: "OpenSans-ExtraBold","Zawgyi-One","Arial",sans-serif;
+  color: #099f44;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+ul.menu {
+  padding: 0;
+  list-style: none;
+}
+
+ul.menu li { 
+  position: relative; 
+  padding: 0;
+  line-height: 24px;
+}
+
+ul.menu li:before {
+  content: "\f101";
+  font-family: "Fontawesome","Zawgyi-One","Arial",sans-serif;
+  padding-right: 5px;
+}
+
+#header {
+  box-shadow: rgba(0,0,0,0.3) 0 -5px 15px;
+}
+
+#menubar {
+  box-shadow: rgba(0,0,0,0.3) 0 0px 10px;
+}
+
+#main-content, #tertiary, #footer {
+  box-shadow: rgba(0,0,0,0.3) 0 5px 15px;
+}
+
+img { max-width: 100%; }
+
+a { color: #000000; }
+
+a:hover { color: #018334; }
+
+.nav > li > a { padding: 0; }
+
+.nav > li > a:hover { background: transparent; }
+
+h3 a:hover { color: #000000; }
+
+p.article-text { color: #333333; }
+
+label { font-weight: normal; }
+
+.container { padding: 0; }
+
+.block-content {
+  max-width: 960px;
+  margin: 0 13px;
+  overflow: hidden;
+}
+
+#main-content {
+  background: #ffffff;
+  padding-top: 2em;
+}
+
+#header {
+  background: #ffffff;
+}
+
+.no-pad-left {
+  padding-left: 0;
+}
+
+.no-pad-right {
+  padding-right: 0;
+}
+
+.no-pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-br {
+  border: 1px solid #cccccc;
+}
+
+.field-date-type p, .field-date-type span {
+  color: #cccccc;
+  font-size: 12px;
+}
+
+.form-control {
+  font-size: 12px;
+}
+
+/**
+  * CSS FOR jcarousel
+  **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  /* Optional, required in this case since it's a <ul> element */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  /* Required only for block elements like <li>'s */
+  float: left;
+}
+
+/**
+  * CSS FOR HEADER BAR
+  **/
+#logo {
+  margin-right: 2em;
+}
+
+#slogan-name a {
+  font-size: 22px;
+}
+
+.search-block {
+  clear: both;
+}
+
+.search-block .form-group {
+  margin: 0;
+  position: relative;
+}
+
+.search-block .form-group input[type="search"] {
+  border-radius: 12px;
+  height: 27px;
+  background: #f2f2f2;
+  width: 233px;
+  float: right;
+}
+
+.search-block .form-group .input-group-btn {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.search-block .form-group .input-group-btn button {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 3px 12px;
+}
+
+#header-top-right-block.block {
+  margin: 1.5em 0 0 0 !important;
+}
+
+#header-top-right-block {
+  padding: 0 27px 0 0;
+}
+
+.flag-block {
+  margin-bottom: 2em;
+}
+
+.glyphicon-search:before {
+  font-size: 11px;
+}
+
+
+
+/**
+  * CSS FOR MENU BAR
+  **/
+.navbar-nav.sm-collapsible .caret, .navbar-nav.sm-collapsible ul .caret {
+  position: absolute;
+  right: 0;
+  margin: 0 15px 0 0;
+  padding: 0;
+  width: 32px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  background: #ab1718;
+}
+
+.navbar-nav.sm-collapsible .caret:before {
+  font-family: "Fontawesome","Zawgyi-One","Arial",sans-serif;
+  content: "\f067";
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.navbar-nav.sm-collapsible .open > a > .caret:before {
+  font-family: "Fontawesome","Zawgyi-One","Arial",sans-serif;
+  content: "\f107";
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus { background: none; }
+
+#menubar { 
+  border-radius: 0;
+  border: 0; 
+}
+
+#menubar ul li a:hover, #menubar ul li a.active, #menubar ul li a:focus { 
+  background: #088e60; 
+  color: #ffffff;
+}
+
+.main-menu ul li.expanded:hover > a { background: #088e60; }
+
+.main-menu ul li.expanded.active-trail > a, .main-menu ul li.expanded.active-trail > span { background: #088e60; }
+
+.main-menu { background: #12a271; }
+
+.main-menu a { 
+  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  color: #ffffff; 
+  font-size: 14px;
+  margin-right: 1px;
+  text-transform: uppercase;
+  padding: 10px 13px !important;
+  line-height: 28px !important;
+}
+
+.main-menu ul li:hover ul { display: block; }
+
+.main-menu ul li ul { 
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: auto;
+  min-width: 220px;
+  padding-top: 9px;
+  top: auto;
+  left: 0;
+  margin-left: 0;
+  margin-top: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+.main-menu ul li ul:before {
+  font-family: "Fontawesome","Zawgyi-One","Arial",sans-serif;
+  content: "\f0de";
+  color: #12a271;
+  vertical-align: text-top;
+  position: absolute;
+  left: 20px;
+  top: 2px;
+  font-size: 30px;
+}
+
+.main-menu ul li ul li {
+  background: #12a271;
+}
+
+.main-menu ul li ul li a { 
+  margin-right: 0; 
+  color: #ffffff;
+}
+
+#navbar.main-menu, .navbar-header.responsive-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav {
+  padding: 0 1em;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+
+
+.navbar-nav.sm-collapsible .caret, .navbar-nav.sm-collapsible ul .caret {
+  background: #008357;
+}
+
+.navbar-nav li.expanded ul.dropdown-menu {
+  padding: 0;
+}
+
+.navbar-nav li.expanded ul.dropdown-menu li a {
+  padding: 10px 2.5em !important;
+}
+
+.navbar-nav li.expanded ul.dropdown-menu:before {
+  content: "";
+}
+
+/**
+  * CSS FOR SLIDER BLOCK REGION
+  **/
+#header-news-block {
+  background: #f2f2f2;
+  padding: 1em 1.5em;
+  height: 368px;
+  overflow: auto;
+}
+
+#header-news-block p, #header-news-block div,  #header-news-block span {
+  line-height: 20px;
+}
+
+
+.more {
+  background: #bdbdbc;
+  border-radius: 5px !important;
+  line-height: 30px;
+  padding: 0 20px;
+  margin-top: 1em;
+  text-shadow: none;
+  border: 0;
+  font-size: 12px;
+  float: right;
+}
+
+.more:hover {
+  color: #000000;
+  background: #e0e0e0;
+}
+
+a.jcarousel-prev, a.jcarousel-next {
+  position: absolute;
+  top: 50%;
+  z-index: 999999;
+  cursor: pointer;
+  text-indent: -9999px;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  width: 24px;
+  height: 24px;
+  outline: none;
+}
+
+a.jcarousel-prev {
+  left: 0;
+  margin-left: 2em;
+  background: url("../images/icon-prev.png") no-repeat;
+}
+
+a.jcarousel-next {
+  right: 0;
+  margin-right: 2em;
+  background: url("../images/icon-next.png") no-repeat;
+}
+
+.responsive-menu {
+  margin: 0;
+}
+
+#branding-block {
+  padding: 0 0 0 27px;
+}
+
+/**
+  * CSS FOR HEADER BLOCK REGION
+  **/
+#header .block {
+  margin: 1.5em 0;
+}
+
+
+/**
+  * CSS FOR INFORMATION BLOCK REGION
+  **/
+.event-table.table-responsive {
+  padding: 0;
+  border: 0;
+}
+
+.event-table.table-responsive td {
+  border: 0;
+  padding: 6px 8px 0 0;
+}
+
+.event-table td {
+  border: 0 !important;
+  padding-left: 0 !important;
+}
+
+.announcement-block p {
+  font-size: 14px;
+}
+
+.event-block, .announcement-block {
+  background: url("../images/block-shadebg.png") no-repeat right 10px top;
+  min-height: 225px;
+}
+
+.field-date-type {
+  margin: 1em 0;
+}
+
+
+/**
+  * CSS FOR ADVERTISEMENT BLOCK REGION
+  **/
+#tertiary {
+  background: #f5f5f5;
+  border-bottom: 1px solid #cecfcf;
+}
+
+#newsletter-block {
+  margin-bottom: 2em;
+}
+
+#newsletter-block form {
+  margin-bottom: 2em;
+}
+
+#newsletter-block img {
+  margin-right: 0.5em;
+}
+
+#advertisement-block .block {
+  margin: 2.5em 0;
+}
+
+#aims-about-block {
+  margin-bottom: 1em;
+}
+
+#aims-about-block .block-content {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.readmore {
+  font-family: "OpenSans","Zawgyi-One","Arial",sans-serif;
+  float: right;
+  font-size: 12px;
+}
+
+.readmore:after {
+  content: "\f101";
+  font-family: "Fontawesome","Zawgyi-One","Arial",sans-serif;
+  padding-left: 5px;
+}
+
+/**
+  * CSS FOR FOOTER REGION
+  **/
+#footer {
+  background: #cecfcf;
+  border-top: 1px solid #ffffff;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 12px;
+}
+
+#footer .block-content {
+  margin: 30px 27px;
+}
+
+/**
+  * CSS FOR RESPONSIVE REGION
+  **/
+@media only screen and (max-width: 991px) {
+  /*.jcarousel li {
+    width: auto !important;
+    max-width: 620px !important;
+  }
+  .jcarousel {
+    max-width: 620px !important;
+  }*/
+  #advertisement-block .block {
+    clear: both;
+  }
+  
+  .container {
+    max-width: 1014px;
+    margin: 0 auto;
+  }
+  .navbar-collapse.main-menu ul li:hover ul {
+    display: none;
+    position: relative;
+    width: 100% !important;
+  }
+  .main-menu .navbar-nav > li, .main-menu .navbar-nav {
+    float: none;
+    margin: 0;
+  }
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, 
+  .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, 
+  .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, 
+  .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, 
+  .col-lg-12 {
+    padding: 0;
+  }
+  .event-block, .announcement-block {
+    background: none;
+    min-height: auto;
+  }
+  .search-block, .flag-block {
+    width: 235px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 1em;
+  }
+  .flag-block {
+    text-align: center;
+    float: none;
+  }
+  #header-top-right-block.block {
+    margin: 0 !important;
+  }
+  #header .block {
+    padding: 1.5em 1.5em 0 1.5em;
+    margin: 0;
+  }
+  #header-top-right-block {
+    padding: 0 1.5em !important;
+  }
+  #logo, #name-slogan {
+    display: inline-block;
+  }
+  #logo {
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .more {
+    margin-bottom: 2em;
+  }
+  #newsletter-block {
+    margin-bottom: 2em;
+  }
+  #header-news-block {
+    height: auto;
+  }
+  #logo {
+    margin-right: 1em;
+  }
+  #advertisement-block .block {
+    margin: 0.5em 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+  #site-name a {
+    font-size: 20px;
+  }
+  #slogan-name a {
+    font-size: 16px;
+  }
+  #branding-block {
+    text-align: center;
+  }
+  #logo {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  #site-name a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #slider-block.col-md-8 {
+    width: 64.66666667%;
+  }
+  #header-news-block.col-md-4 {
+    width: 35.333333%;
+  }
+
+}
+
+@media only screen and (min-width: 680px) and (max-width: 991px) {
+  #slider-block.col-md-8 {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #header-news-block {
+    width: 100% !important;
+  }
+  #newsletter-block {
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #header-news-block.col-md-4 {
+    width: 31.333333%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .caret {
+    display: none;
+  }
+  #slider-block, .jcarousel li {
+    width: 620px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar-nav {
+    padding: 0 0.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1014px;
+    margin: 0 auto;
+  }
+}

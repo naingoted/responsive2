@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Fontawesome";
+  src:url('../fonts/fontawesome-webfont.woff') format('woff'),
+      url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+      url('../fonts/fontawesome-webfont.svg') format('svg'),
+      url('../fonts/fontawesome-webfont.ttf') format('truetype');
+}
+
+$date-grey-font : 11px;
+$font-content : '\f054';
+$icon-font : 'Fontawesome';
+
