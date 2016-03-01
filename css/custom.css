@@ -182,6 +182,7 @@ label { font-weight: normal; }
 #main-content {
   background: #ffffff;
   padding-top: 2em;
+  padding-right: 2em;
 }
 
 #header {
