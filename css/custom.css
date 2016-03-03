@@ -39,11 +39,11 @@
 }
 
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
-      url('../fonts/OpenSans-Bold-webfont.eot') format('embedded-opentype'),
-      url('../fonts/OpenSans-Bold-webfont.svg') format('svg'),
-      url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype');
+  font-family: "OpenSans-Bold-700";
+  src: url('../fonts/OpenSans-Bold-700-webfont.woff') format('woff'),
+      url('../fonts/OpenSans-Bold-700-webfont.eot') format('embedded-opentype'),
+      url('../fonts/OpenSans-Bold-700-webfont.svg') format('svg'),
+      url('../fonts/OpenSans-Bold-700-webfont.ttf') format('truetype');
 }
 
 body {
@@ -67,17 +67,17 @@ h1 {
 }
 
 h2 {
-  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  font-family: "OpenSans-Bold-700","Zawgyi-One","Arial",sans-serif;
   
   font-weight: normal;
-  color: #018334;
+  color: #12a271;
   text-transform: uppercase;
 }
 
 h3 {
-  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  font-family: "OpenSans-Bold-700","Zawgyi-One","Arial",sans-serif;
   font-size: 20px;
-  color: #018334;
+  color: #12a271;
   text-transform: uppercase;
   font-weight: normal;
   line-height: 32px;
@@ -93,9 +93,9 @@ h3.mm {
 }
 
 h4 {
-  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  font-family: "OpenSans-Bold-700","Zawgyi-One","Arial",sans-serif;
   font-size: 18px;
-  color: #018334;
+  color: #12a271;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -106,7 +106,7 @@ h4.mm {
 }
 
 h5 {
-  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  font-family: "OpenSans-Bold-700","Zawgyi-One","Arial",sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: #333333;
@@ -159,7 +159,7 @@ img { max-width: 100%; }
 
 a { color: #000000; }
 
-a:hover { color: #018334; }
+a:hover { color: #12a271; }
 
 .nav > li > a { padding: 0; }
 
@@ -349,7 +349,7 @@ label { font-weight: normal; }
 .main-menu { background: #12a271; }
 
 .main-menu a { 
-  font-family: "OpenSans-Bold","Zawgyi-One","Arial",sans-serif;
+  font-family: "OpenSans-Bold-700","Zawgyi-One","Arial",sans-serif;
   color: #ffffff; 
   font-size: 14px;
   margin-right: 1px;

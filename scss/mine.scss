@@ -87,7 +87,10 @@ button {
      &-left {
         font-size: $date-grey-font;
         color: $date-grey-color;
-
+        p {
+          font-size: $date-grey-font-news;
+          color: $date-grey-color;
+        }
      }
      &-right {
         
@@ -96,6 +99,7 @@ button {
  .panel {
     margin-top: 1px !important;
     &-body{
+          padding: 5px !important;
        ul {
           list-style: none;
           padding-left: 0px;
@@ -116,19 +120,50 @@ button {
     }
  }
 
+.thumbnail {
+  border: 0px !important;
+  box-shadow: 0 0 !important;
+  border-radius: 0 !important;
+    .caption {
+      padding : 0px !important;
+    }
+}
+
+
  h3.title-without-bar {
-   color : green;
+   color : $main-color;
 
  }
 
-.title-without-bar h3 {
+ h4 {
+  &.newsroom {
+    font-size:14px !important;
+  }
 
-  margin-top: 0;
-}
+ }
 
+ .newsroom {
+   &-margin{
+    margin : 0 0 1.3em 1.9em;
+   }
+ }
+
+.title-without-bar {
+  
+    h3 {
+
+          margin-top:0 ;
+          color: $main-color;
+          font-family: "OpenSans","Zawgyi-one";
+          text-transform: none;
+          font-weight: 500;
+    }
+
+  }
  .content-block {
       &.line-bottom{
         border-bottom: $line-bottom;
+        overflow: hidden;
       }
       p {
         &:last-child {      
@@ -150,11 +185,7 @@ button {
   }
 }
 
-.padding {
-  &-top {
-    padding-top: 1em;
-  }
-}
+
 .shadow {
   &-inner {
     padding-top: 1em;
@@ -169,21 +200,41 @@ button {
 
 .addthis {
   position: relative;
-  padding-top: 12px;
-  padding-bottom: 12px
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 
-/*padding adjustment*/
+/*position adjustment*/
 
 img[src="../images/social-buttons.png"]{
   position: absolute;
-  right : 0px;
-  
+  right : 0;
+  top : 0;
 
 }
+img[src = "../images/ln-big01.png"] {
+    margin-top: 2em;
+}
+
+
+.padding {
+  &-top {
+    padding-top: 1em;
+  }
+}  
+
+
 .pad-top {
     padding-top: 2em;
+}
+.margin {
+  &-bot {
+    margin-bottom: 5em;
+  }
+  &-top {
+    margin-top: 1em !important;
+  }
 }
 
 /*media queries*/
