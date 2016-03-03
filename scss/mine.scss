@@ -1,7 +1,9 @@
 @import "color";
 @import "font";
 
+/*media queries*/
 
+$phone : "only screen and (max-width: 430px)";
  /*slider */
 
 ul {
@@ -13,6 +15,30 @@ ul {
   li {
     line-height: 2.7em;
     list-style: none;
+
+  }
+}
+
+div{
+  .addmaincolor {
+    
+    &.panel-heading {
+      border-radius: 0px;
+      background: $main-color;
+      position: relative;
+    }
+    & .panel-title{
+      color: white;
+    }
+
+  }
+}
+
+button {
+  &.make-me-round {
+    position:absolute;
+    right:10px;
+    top:5px;
 
   }
 }
@@ -57,32 +83,48 @@ ul {
   }
 
 /* latest news */
+ .date-grey{
+     &-left {
+        font-size: $date-grey-font;
+        color: $date-grey-color;
 
- .date-grey-left {
-    font-size: $date-grey-font;
-    color: $date-grey-color;
-
+     }
+     &-right {
+        
+     }
  }
+ .panel {
+    margin-top: 1px !important;
+    &-body{
+       ul {
+          list-style: none;
+          padding-left: 0px;
+          &.addicon{
+            li 
+            {
+              &:before {
+                font-family : $icon-font ;
+                content: $font-content ;
+              }
+            }
+          }
 
- .pannel-body{
-    ul {
-       list-style: none;
-       padding-left: 0px;
-       &.addicon{
-         li 
-         {
-           &:before {
-             font-family : $icon-font ;
-             content: $font-content ;
-           }
-         }
        }
-
+    }
+    &-title{
+      margin-right: 25px;
     }
  }
+
  h3.title-without-bar {
    color : green;
+
  }
+
+.title-without-bar h3 {
+
+  margin-top: 0;
+}
 
  .content-block {
       &.line-bottom{
@@ -122,3 +164,37 @@ ul {
     background: rgba(247, 241, 241, 0.41);
   }
 }
+
+/*social buttons*/
+
+.addthis {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px
+}
+
+
+/*padding adjustment*/
+
+img[src="../images/social-buttons.png"]{
+  position: absolute;
+  right : 0px;
+  
+
+}
+.pad-top {
+    padding-top: 2em;
+}
+
+/*media queries*/
+
+@media #{$phone} {
+  .panel {
+    &-title {
+      &.mobile-font{
+        font-size:14px;
+
+      }
+    }
+  }
+} 

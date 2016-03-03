@@ -84,7 +84,7 @@ h3 {
 }
 
 .title-bar {
-  border-bottom: 1px solid #018334;
+  border-bottom: 1px solid #3bb46a;
 }
 
 h3.mm {
@@ -181,8 +181,9 @@ label { font-weight: normal; }
 
 #main-content {
   background: #ffffff;
-  padding-top: 2em;
-  padding-right: 2em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #header {

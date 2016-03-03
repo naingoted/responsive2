@@ -2,6 +2,7 @@
 @font-face {
   font-family: "Fontawesome";
   src: url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/fontawesome-webfont.svg") format("svg"), url("../fonts/fontawesome-webfont.ttf") format("truetype"); }
+/*media queries*/
 /*slider */
 ul {
   padding-left: 8px;
@@ -11,6 +12,18 @@ ul {
   ul li {
     line-height: 2.7em;
     list-style: none; }
+
+div .addmaincolor.panel-heading {
+  border-radius: 0px;
+  background: #12a271;
+  position: relative; }
+div .addmaincolor .panel-title {
+  color: white; }
+
+button.make-me-round {
+  position: absolute;
+  right: 10px;
+  top: 5px; }
 
 .list-group-item {
   padding-left: 26px; }
@@ -44,15 +57,22 @@ ul {
   font-size: 11px;
   color: rgba(195, 159, 159, 0.82); }
 
-.pannel-body ul {
-  list-style: none;
-  padding-left: 0px; }
-  .pannel-body ul.addicon li:before {
-    font-family: "Fontawesome";
-    content: ""; }
+.panel {
+  margin-top: 1px !important; }
+  .panel-body ul {
+    list-style: none;
+    padding-left: 0px; }
+    .panel-body ul.addicon li:before {
+      font-family: "Fontawesome";
+      content: ""; }
+  .panel-title {
+    margin-right: 25px; }
 
 h3.title-without-bar {
   color: green; }
+
+.title-without-bar h3 {
+  margin-top: 0; }
 
 .content-block.line-bottom {
   border-bottom: 1px solid rgba(134, 128, 118, 0.28); }
@@ -75,5 +95,24 @@ h3.title-without-bar {
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 1px #A58383;
   background: rgba(247, 241, 241, 0.41); }
+
+/*social buttons*/
+.addthis {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+/*padding adjustment*/
+img[src="../images/social-buttons.png"] {
+  position: absolute;
+  right: 0px; }
+
+.pad-top {
+  padding-top: 2em; }
+
+/*media queries*/
+@media only screen and (max-width: 430px) {
+  .panel-title.mobile-font {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=mine.css.map */
