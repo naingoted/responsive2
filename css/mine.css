@@ -135,6 +135,9 @@ iframe#content {
   margin-bottom: 2em; }
 
 /*position adjustment*/
+.form-horizontal {
+  margin-top: 3em; }
+
 div.margin-bot-contact {
   margin-bottom: 3em;
   overflow: hidden;
@@ -165,6 +168,9 @@ img[src="../images/ln-big01.png"] {
   color: white;
   padding: 6px 5px 5px; }
 
+label.control-label {
+  font-family: OpenSans-Bold; }
+
 /*media queries*/
 @media only screen and (max-width: 768px) {
   .panel-title.mobile-font {
@@ -176,7 +182,10 @@ img[src="../images/ln-big01.png"] {
     margin-right: -24px !important; }
 
   .btn.contact {
-    margin-left: 104px; } }
+    margin-left: 104px; }
+
+  div.margin-left-contact {
+    margin-left: 24%; } }
 @media only screen and (min-width: 992px) {
   .aboutus-img1 {
     margin-top: 6em; } }
