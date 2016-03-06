@@ -27,10 +27,27 @@ jQuery(document).ready(function() {
   });*/
     jQuery("#head").load("header.html"); 
     jQuery("#foot").load("footer.html");
+
+    var $content = $('#content');
+    $('#toc a')
+        .click(function() {
+            $content.attr('src', $(this).attr('href'));
+            return false;
+        });
+    
 });
 
 $(function(){
   
   $("#head").load("header.html");
   $("#foot").load("footer.html");
+});
+
+$(function() {
+    var $content = $('#content');
+    $('#toc a')
+        .click(function() {
+            $content.attr('src', $(this).attr('href'));
+            return false;
+        });
 });

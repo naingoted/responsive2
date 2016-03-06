@@ -52,6 +52,10 @@ button.make-me-round {
   .navbar-toggle .collapsed .bottom-bar {
     transform: rotate(0); }
 
+/* about us*/
+.aboutus p {
+  font-size: 13px; }
+
 /* latest news */
 .date-grey-left {
   font-size: 11px;
@@ -86,6 +90,10 @@ h3.title-without-bar {
 h4.newsroom {
   font-size: 14px !important; }
 
+iframe#content {
+  width: 100%;
+  border: none; }
+
 .newsroom-margin {
   margin: 0 0 1.3em 1.9em; }
 
@@ -95,6 +103,10 @@ h4.newsroom {
   font-family: "OpenSans","Zawgyi-one";
   text-transform: none;
   font-weight: 500; }
+.title-without-bar a {
+  font-size: 13px; }
+.title-without-bar p {
+  font-size: 13px; }
 
 .content-block.line-bottom {
   border-bottom: 1px solid rgba(134, 128, 118, 0.28);
@@ -123,7 +135,12 @@ h4.newsroom {
   margin-bottom: 2em; }
 
 /*position adjustment*/
-img[src="../images/social-buttons.png"] {
+div.margin-bot-contact {
+  margin-bottom: 3em;
+  overflow: hidden;
+  padding-right: 2em; }
+
+.news-details-img1 {
   position: absolute;
   right: 0;
   top: 0; }
@@ -142,9 +159,45 @@ img[src="../images/ln-big01.png"] {
 .margin-top {
   margin-top: 1em !important; }
 
+.btn.contact {
+  border-radius: 0px;
+  background: #12a271;
+  color: white;
+  padding: 6px 5px 5px; }
+
 /*media queries*/
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 768px) {
   .panel-title.mobile-font {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .form-horizontal {
+    padding-left: 3em; }
+  .form-group {
+    margin-right: -24px !important; }
+
+  .btn.contact {
+    margin-left: 104px; } }
+@media only screen and (min-width: 992px) {
+  .aboutus-img1 {
+    margin-top: 6em; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .btn.contact {
+    margin-left: 76px; }
+
+  img.aboutus-img1 {
+    margin-top: 9em; }
+
+  label.control-label {
+    padding-right: 1em; } }
+@media only screen and (min-width: 768px) {
+  div.margin-bot-aboutus {
+    margin-bottom: 3em;
+    overflow: hidden; }
+  div.margin-bot-contact {
+    margin-bottom: 3em;
+    overflow: hidden; }
+
+  .btn.contact {
+    margin-right: 1em; } }
 
 /*# sourceMappingURL=mine.css.map */

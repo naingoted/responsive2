@@ -3,8 +3,14 @@
 
 /*media queries*/
 
-$phone : "only screen and (max-width: 430px)";
+$phone : "only screen and (max-width: 768px)";
+
  /*slider */
+$desktop : "only screen and (min-width: 992px)";
+
+$tablet-limit : "only screen and (min-width: 768px) and (max-width: 991px)";
+
+$tablet : "only screen and (min-width: 768px)";
 
 ul {
   padding-left: 8px;
@@ -81,6 +87,16 @@ button {
   	  transform: rotate(0);
   	}
   }
+/* about us*/
+  .aboutus {
+    p {
+      font-size :$main-text-size;
+    }
+    &-img1 {
+    
+    }
+  }
+
 
 /* latest news */
  .date-grey{
@@ -142,6 +158,13 @@ button {
 
  }
 
+ iframe {
+  &#content {
+    width: 100%;
+    border:none;
+  }
+ }
+
  .newsroom {
    &-margin{
     margin : 0 0 1.3em 1.9em;
@@ -157,6 +180,13 @@ button {
           font-family: "OpenSans","Zawgyi-one";
           text-transform: none;
           font-weight: 500;
+    }
+
+    a{
+      font-size: $main-text-size;
+    }
+    p {
+      font-size: $main-text-size;
     }
 
   }
@@ -207,12 +237,26 @@ button {
 
 /*position adjustment*/
 
-img[src="../images/social-buttons.png"]{
+   div.margin {
+     &-bot {
+       &-aboutus {
+
+       }
+       &-contact {
+         margin-bottom: 3em;
+         overflow: hidden;
+         padding-right: 2em;
+       }
+
+     }
+   }
+  
+.news-details-img1 {
   position: absolute;
   right : 0;
   top : 0;
-
 }
+
 img[src = "../images/ln-big01.png"] {
     margin-top: 2em;
 }
@@ -237,6 +281,18 @@ img[src = "../images/ln-big01.png"] {
   }
 }
 
+
+.btn {
+    &.contact {
+      border-radius: 0px;
+      background: $main-color;
+      color: white;
+      padding: 6px 5px 5px;
+      
+  }
+}
+
+
 /*media queries*/
 
 @media #{$phone} {
@@ -248,4 +304,62 @@ img[src = "../images/ln-big01.png"] {
       }
     }
   }
+  .form {
+    &-horizontal {
+      padding-left: 3em;
+    }
+    &-group {
+          margin-right: -24px !important;
+    }
+  }
+
+
+  .btn.contact{
+      margin-left:104px;
+  }
 } 
+
+@media #{$desktop} {
+    .aboutus-img1 {
+      margin-top: 6em;
+    }
+}
+
+@media #{$tablet-limit} {
+    .btn {
+      &.contact{
+        margin-left:76px;
+      }
+    }
+    img.aboutus-img1 {
+      margin-top: 9em; 
+    }
+
+    label.control-label {
+      padding-right: 1em;
+    }
+
+}
+
+@media #{$tablet} {
+
+   div.margin {
+     &-bot {
+       &-aboutus {
+         margin-bottom: 3em;
+         overflow: hidden;
+       }
+       &-contact {
+         margin-bottom: 3em;
+         overflow: hidden;
+       }
+
+     }
+   }
+
+   .btn {
+     &.contact{
+       margin-right:1em;
+     }
+   }
+}
