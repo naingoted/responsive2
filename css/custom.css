@@ -433,14 +433,14 @@ label { font-weight: normal; }
   * CSS FOR SLIDER BLOCK REGION
   **/
 #header-news-block {
-  background: #f2f2f2;
-  padding: 1em 1.5em;
+  background: rgba(247, 241, 241, 0.41);
+  /*padding: 1em 1.5em;*/
   height: 368px;
   overflow: auto;
 }
 
 #header-news-block p, #header-news-block div,  #header-news-block span {
-  line-height: 20px;
+  line-height: 20apx;
 }
 
 

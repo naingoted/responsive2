@@ -159,6 +159,8 @@ img[src="../images/ln-big01.png"] {
 
 .margin-bot {
   margin-bottom: 5em; }
+  .margin-bot-2 {
+    margin-bottom: 2em; }
 .margin-top {
   margin-top: 1em !important; }
 
@@ -170,6 +172,21 @@ img[src="../images/ln-big01.png"] {
 
 label.control-label {
   font-family: OpenSans-Bold; }
+
+.pagination > li > a {
+  position: relative;
+  float: left;
+  padding: 6px 12px !important;
+  margin-left: 3px !important;
+  line-height: 1.428571;
+  color: white !important;
+  text-decoration: none;
+  background-color: #12a271 !important;
+  border: 1px solid rgba(120, 80, 195, 0.08);
+  border-top-left-radius: 19px !important;
+  border-top-right-radius: 19px !important;
+  border-bottom-left-radius: 19px !important;
+  border-bottom-right-radius: 19px !important; }
 
 /*media queries*/
 @media only screen and (max-width: 768px) {
