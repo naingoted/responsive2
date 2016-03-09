@@ -90,12 +90,13 @@ h3 {
 h3.mm {
   font-size: 18px;
   line-height: 34px;
+  color: #018334;
 }
 
 h4 {
   font-family: "OpenSans-Bold-700","Zawgyi-One","Arial",sans-serif;
   font-size: 18px;
-  color: #12a271;
+  color: #018334;
   text-transform: uppercase;
   font-weight: normal;
 }

@@ -6,8 +6,18 @@
       url('../fonts/fontawesome-webfont.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Zawgyi-One";
+  src: url('../fonts/Zawgyi-One.woff') format('woff'),
+      url('../fonts/Zawgyi-One.eot') format('embedded-opentype'),
+      url('../fonts/Zawgyi-One.svg') format('svg'),
+      url('../fonts/Zawgyi-One.ttf') format('truetype');
+}
+
 $date-grey-font : 11px;
 $date-grey-font-news : 12px;
-$font-content : '\f054';
+$font-content : '\f105';
 $icon-font : 'Fontawesome';
 $main-text-size: 13px;
+$main-mm-font : 'Zawgyi-One';
+

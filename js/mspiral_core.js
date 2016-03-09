@@ -25,8 +25,8 @@ jQuery(document).ready(function() {
 /*  jQuery('.bxslider').bxSlider({
 
   });*/
-    jQuery("#head").load("header.html"); 
-    jQuery("#foot").load("footer.html");
+    // jQuery("#head").load("header.html"); 
+    // jQuery("#foot").load("footer.html");
 
     var $content = $('#content');
     $('#toc a')

@@ -12,6 +12,9 @@ $tablet-limit : "only screen and (min-width: 768px) and (max-width: 991px)";
 
 $tablet : "only screen and (min-width: 768px)";
 
+a {
+  color : $main-color;
+}
 ul {
   padding-left: 8px;
   list-style: none;
@@ -54,48 +57,28 @@ button {
 		padding-left:26px; 
 	}
 }
-
-/*for navbar animation*/
-  .navbar-toggle {
-  	border: none;
-  	background: transparent !important;
-  	&:hover {
-  		background: transparent !important;
-  	}
-  	.icon-bar {
-		width: 22px;
-		transition: all 0.1s;
-  	}
-  	.top-bar {
-  	  transform: rotate(45deg);
-  	  transform-origin: 10% 10%;
-  	}
-  	.middle-bar {
-  	  opacity: 0;
-  	}
-  	.bottom-bar {
-  	  transform: rotate(-45deg);
-  	  transform-origin: 10% 90%;
-  	}
-  	.collapsed .top-bar {
-  	  transform: rotate(0);
-  	}
-  	.collapsed .middle-bar {
-  	  opacity: 1;
-  	}
-  	.collapsed .bottom-bar {
-  	  transform: rotate(0);
-  	}
+  a.active {
+    color: $main-color;
   }
+nav li.active {
+    background: rgba(20, 211, 146, 1);
+}
+
 /* about us*/
   .aboutus {
     p {
       font-size :$main-text-size;
+      font-family:$main-mm-font; 
     }
     &-img1 {
     
     }
   }
+/*contact*/
+
+.margin-bot-contact th {
+  font-family: OpenSans-Bold ;
+}
 
 
 /* latest news */
@@ -114,6 +97,7 @@ button {
  }
  .panel {
     margin-top: 1px !important;
+    box-shadow: none !important;
     &-body{
           padding: 5px !important;
        ul {
@@ -122,9 +106,13 @@ button {
           &.addicon{
             li 
             {
+
+                    line-height: 2.1em;
+                    font-size: 12px;
               &:before {
                 font-family : $icon-font ;
                 content: $font-content ;
+                padding-right:5px;
               }
             }
           }
@@ -138,16 +126,20 @@ button {
 
 .thumbnail {
   border: 0px !important;
-  box-shadow: 0 0 !important;
+  box-shadow: none !important;
   border-radius: 0 !important;
     .caption {
       padding : 0px !important;
+
+    }
+    p {
+      font-size: 12px !important;
     }
 }
 
 
- h3.title-without-bar {
-   color : $main-color;
+ .title-without-bar {
+   color : $title-color;
 
  }
 
@@ -176,8 +168,8 @@ button {
     h3 {
 
           margin-top:0 ;
-          color: $main-color;
-          font-family: "OpenSans","Zawgyi-one";
+          color: $title-color;
+          font-family: "OpenSans",$main-mm-font;
           text-transform: none;
           font-weight: 500;
     }
@@ -194,6 +186,8 @@ button {
       &.line-bottom{
         border-bottom: $line-bottom;
         overflow: hidden;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
       }
       p {
         &:last-child {      
@@ -221,8 +215,8 @@ button {
     padding-top: 1em;
     -moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow: inset 0 0 1px $iframe;
-    background: rgba(247, 241, 241, 0.41);
+    box-shadow: inset 0 0 1px #d7d7d7;
+    background: #fafafa;
   }
 }
 
@@ -231,7 +225,7 @@ button {
 .addthis {
   position: relative;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 
@@ -278,8 +272,10 @@ img[src = "../images/ln-big01.png"] {
 .margin {
   &-bot{
     margin-bottom: 5em;
+    
           &-2 {
         margin-bottom: 2em;
+
       }
     }
   &-top {
@@ -293,37 +289,65 @@ img[src = "../images/ln-big01.png"] {
       border-radius: 0px;
       background: $main-color;
       color: white;
-      padding: 6px 5px 5px;
+      padding: 9px 5px 9px;
       
   }
+}
+
+.addshade {
+      background: url("../images/dh-sidebar-shade.png") no-repeat right 10px top;
+    /* min-height: 225px; */
 }
 
  label.control-label {
        font-family: OpenSans-Bold;
     }
 
-  .pagination>li>a, {
+  .pagination>li>a {
     position: relative;
     float: left;
     padding: 6px 12px;
-    margin-left: 3px;
+    margin-left: 3px !important;
     line-height: 1.428571;
-    color: white;
+    color: white !important;
     text-decoration: none;
-    background-color: rgba(119, 119, 119, 0.61);
-    border: 1px solid rgba(120, 80, 195, 0.08);
+    background-color: rgba(119, 119, 119, 0.61) !important;
+    border: 1px solid rgba(120, 80, 195, 0.08) !important;
     border-top-left-radius: 19px !important;
     border-top-right-radius: 19px !important;
     border-bottom-left-radius: 19px !important;
     border-bottom-right-radius: 19px !important;
 }  
 
-  .pagination>li>span {
+.pagination > li > a > span {
+color: #ffffff;
+border-top-left-radius: 19px !important;
+    border-top-right-radius: 19px !important;
+    border-bottom-left-radius: 19px !important;
+    border-bottom-right-radius: 19px !important;
 
-  }
+}
+
+.pagination > li.remove a {
+background: transparent !important;
+border: 0 !important;
+color: black !important;
+padding: 6px 0 !important;
+}
 /*media queries*/
 
 @media #{$phone} {
+
+  div.fixed {
+    &-height {
+      height: 50%;
+    }
+    &-content {
+      height: 173px;
+      overflow: auto;
+    }
+  }
+
   .panel {
     &-title {
       &.mobile-font{
@@ -335,11 +359,11 @@ img[src = "../images/ln-big01.png"] {
   .form {
     &-horizontal {
       padding-left: 3em;
-
-    }
-    &-group {
+            .form-group {
           margin-right: -24px !important;
     }
+    }
+
   }
 
   div.pad-top {
@@ -348,7 +372,7 @@ img[src = "../images/ln-big01.png"] {
 
 
   .btn.contact{
-      margin-left:104px;
+      /*margin-left:104px;*/
   }
 
   div.margin-left-contact {

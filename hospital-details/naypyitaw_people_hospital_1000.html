@@ -21,7 +21,63 @@
 		<!-- need to add animation to .make-me-round -->
 		<!-- need to put addthis buttons -->
 		<!-- For header -->
-		<div id = "head"> </div>
+		<div id="header" class="container">
+		  <div class="region-inner wrapper">
+		    <div id="branding-block" class="block col-xs-12 col-md-9">
+		      <div id="logo" class="navbar-left">
+		        <a href="index.htm">
+		          <img src="../images/dh-logo.png">
+		        </a>
+		      </div>
+		      <div id="name-slogan" class="navbar-left">
+		        <h2 id="slogan-name"><a href="">က်န္းမာေရးဝန္ႀကီးဌာန၊ ကုသေရးဦးစီးဌာန</a></h2>
+		        <h1 id="site-name"><a href="">Department of Medical Services</a></h1>
+		      </div>
+		    </div>
+
+		    <div id="header-top-right-block" class="block col-xs-12 col-md-3">
+		      <div class="flag-block navbar-right">
+		        <img src="../images/mmflag.gif">
+		      </div>
+		      <div class="search-block">
+		        <form>
+		          <div class="form-group">
+		            <input type="search" class="form-control">
+		            <span class="input-group-btn">
+		              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+		            </span>
+		          </div>
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- nav -->
+
+		<nav id="menubar" class="navbar container" role="navigation">
+		  <div class="container">
+		    <div class="navbar-header responsive-menu main-menu">
+		      <button class="navbar-toggle collapsed" type="button" aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" >
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+		    <div id="navbar" class="navbar-collapse collapse main-menu">
+		      <ul class="nav navbar-nav" data-smartmenus-id="14386614022581323">
+		        <li class="first"><a href="index.html" class="mm">HOME</a></li>
+		        <li><a href="../aboutus.html" class="eng">ABOUT US</a></li>
+		        <li><a href="../news-room.html">NEWS</a></li>
+		        <li><a href="../healthcare-service.html" class="eng">HEALTH CARE SERVICES</span></a> </li>
+		        <li><a href="../hospital-list.html" class="eng">HOSPITAL LIST</a></li>
+		        <li><a href="../education.html" class="eng">EDUCATION</a></li>
+		        <li><a href="../events.html" class="eng">EVENT CALENDER</a></li>
+		        <li class="last"><a href="../contact.html" class="eng">CONTACT</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 		<!-- For body -->
 		<div class = "container" id = "main-content">
 			<div class = "col-md-8">
@@ -29,17 +85,17 @@
 					<h3>ေနျပည္ေတာ္ျပည္သူ႔ေဆး႐ုံႀကီး ခုတင္(၁၀၀၀)</h3>
 				</div>
 				<img src="../images/hospital-details01.png">
-				<div class = "addthis"> <img src="../images/social-buttons.png"> </div>
+				<div class = "addthis"> <img class = "news-details-img1" src="../images/social-buttons.png"> </div>
 				<div class="panel-group pad-top" id="accordion" role="tablist" aria-multiselectable="true">
 				  <div class="panel">
-				    <div class="panel-heading addmaincolor" role="tab" id="headingOne">
+				    <div class="panel-heading addmaincolor" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 				      <h6 class="panel-title mobile-font">
 				      	၁။ ေဆး႐ုံသမိုင္းေၾကာင္း
 
 				      </h6>
-				      <button class ="make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+<!-- 				      <button class ="make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 				        >
-				      </button>
+				      </button> -->
 				    </div>
 				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 				      <div class="panel-body">
@@ -54,13 +110,11 @@
 				    </div>
 				  </div>
 				  <div class="panel">
-				    <div class="panel-heading addmaincolor" role="tab" id="headingTwo">
+				    <div class="panel-heading addmaincolor" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 				      <h4 class="panel-title mobile-font">	
 				      	၂။ တာဝန္ထမ္းေဆာင္ခဲ့ေသာ ေဆး႐ုံအုပ္ႀကီးမ်ားစာရင္း
 				      </h4>
-				      <button class="collapsed make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				           >
-				      </button>
+
 				    </div>
 				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 				      <div class="panel-body">
@@ -69,14 +123,12 @@
 				    </div>
 				  </div>
 				  <div class="panel">
-				    <div class="panel-heading addmaincolor" role="tab" id="headingThree">
+				    <div class="panel-heading addmaincolor" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 				      <h4 class="panel-title mobile-font">
 				      	၃။ ေဆး႐ုံေဆာင္ပုဒ္မ်ား ၊ လက္ကမ္းစာေစာင္မ်ား၊ သင္တန္းကိစၥရပ္မ်ား
 
 				      </h4>
-				      <button class="collapsed make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				      	>
-				      </button>
+
 				    </div>
 				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 				      <div class="panel-body">
@@ -86,14 +138,12 @@
 				  </div>
 
 				  <div class="panel">
-				    <div class="panel-heading addmaincolor" role="tab" id="heading4">
+				    <div class="panel-heading addmaincolor" role="tab" id="heading4" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
 				      <h4 class="panel-title mobile-font">
 				      	၄။ ဆက္သြယ္ရမည့္လိပ္စာမ်ား ၊ ဖုန္းနံပါတ္မ်ား
 
 				      </h4>
-				      <button class="collapsed make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-				      	>
-				      </button>
+
 				    </div>
 				    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
 				      <div class="panel-body">
@@ -103,14 +153,12 @@
 				  </div>
 
 				  <div class="panel">
-				    <div class="panel-heading addmaincolor" role="tab" id="heading5">
+				    <div class="panel-heading addmaincolor" role="tab" id="heading5" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
 				      <h4 class="panel-title mobile-font">
 				      	၅။ ေဆးလူမွု ဆက္ဆံေရးဌာန၏ ေဆာင္ရြက္ခ်က္မ်ား
 
 				      </h4>
-				      <button class="collapsed make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-				      	>
-				      </button>
+
 				    </div>
 				    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
 				      <div class="panel-body">
@@ -120,14 +168,12 @@
 				  </div>
 
 				  <div class="panel">
-				    <div class="panel-heading addmaincolor" role="tab" id="heading6">
+				    <div class="panel-heading addmaincolor" role="tab" id="heading6" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
 				      <h4 class="panel-title mobile-font">
 				      	၆။ အစည္းအေဝးမ်ား၊ က်န္းမာေရးသတင္းအခ်က္အလက္ႏွင့္ ပညာေပးအစီအစဥ္မ်ား
 
 				      </h4>
-				      <button class="collapsed make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
-				      	>
-				      </button>
+
 				    </div>
 				    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
 				      <div class="panel-body">
@@ -137,14 +183,12 @@
 				  </div>
 
 				  <div class="panel">
-				    <div class="panel-heading addmaincolor" role="tab" id="heading7">
+				    <div class="panel-heading addmaincolor" role="tab" id="heading7" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
 				      <h4 class="panel-title mobile-font">
 				      	၇။ ျပည္တြင္းျပည္ပအဖြဲ႕အစည္းမ်ားႏွင့္ ပူးေပါင္းေဆာင္ရြက္မွုမ်ား
 
 				      </h4>
-				      <button class="collapsed make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
-				      	>
-				      </button>
+
 				    </div>
 				    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
 				      <div class="panel-body">
@@ -154,14 +198,12 @@
 				  </div>
 
 				  <div class="panel">
-				    <div class="panel-heading addmaincolor" role="tab" id="heading8">
+				    <div class="panel-heading addmaincolor" role="tab" id="heading8" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
 				      <h4 class="panel-title mobile-font">
 				      	၈။ ေဆးလူမွု ဆက္ဆံေရးဌာန၏ ေဆာင္ရြက္ခ်က္မ်ား
 
 				      </h4>
-				      <button class="collapsed make-me-round" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
-				      	>
-				      </button>
+
 				    </div>
 				    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
 				      <div class="panel-body">
@@ -277,7 +319,12 @@
 
 
 		<!-- For footer -->
-		<div id = "foot"> </div>
+		<div id="footer" class="container">
+		  <div class="block-content block">
+		    <p>copyrights © 2015. Department of Medical Services.</p>
+		    <p>All content is available under the Open Government Licence v3.0, except where otherwise stated.</p>
+		  </div> 
+		</div>
 
 
 		<!-- JavaScripts -->
